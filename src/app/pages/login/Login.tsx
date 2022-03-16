@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export const Login = () => {
 
@@ -10,6 +10,15 @@ export const Login = () => {
         console.log(email);
         console.log(password);
     };
+
+    useEffect(() => {
+        console.log(email);
+    }, [email]);
+
+    useEffect(() => {
+        console.log(password);
+    }, [password]);
+
 
     return (
         <div>
