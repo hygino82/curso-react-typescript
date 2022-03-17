@@ -1,6 +1,6 @@
 import { useCallback, useMemo, useRef, useState } from 'react';
-import { ButtonLogin } from './components/ButtonLogin';
 
+import { ButtonLogin } from './components/ButtonLogin';
 import { InputLogin } from './components/InputLogin';
 
 export const Login = () => {
@@ -46,9 +46,6 @@ export const Login = () => {
                     ref={inputPasswordRef}
                 />
 
-                {/* <button type='button' onClick={handleEntrar}>
-                    Entrar
-                </button> */}
                 <ButtonLogin type='button' onClick={handleEntrar}>
                     {'Entrar'}
                 </ButtonLogin>
